@@ -13,7 +13,8 @@ public class Mago extends Personaje implements Entrenable {
 
     @Override
     public void entrenar() {
-        puntosExperiencia =+ 15;
+        sumarPuntosExperiencia(15);
+
     }
 }
 

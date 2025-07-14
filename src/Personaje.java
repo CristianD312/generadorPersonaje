@@ -51,8 +51,12 @@ public abstract class Personaje {
     public void setPuntosExperiencia(int puntosExperiencia) {
         this.puntosExperiencia = puntosExperiencia;
     }
+
     public void sumarPuntosExperiencia(int puntosExperiencia) {
         this.puntosExperiencia += puntosExperiencia;
+        if (puntosExperiencia > 100) {nivel +=1;}
     }
+
+
 }
 
