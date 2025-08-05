@@ -38,7 +38,7 @@ public class Evento {
         return estado;
     }
 
-    public void estadoBatalla() {
+    public void mostrarEstadoBatalla() {
         System.out.println("Puntos de vida: " + oponente.getNombre() + " : " + oponente.getPuntosDeVida());
         System.out.println("Puntos de vida: " + personaje.getClass().getSimpleName() + " " + personaje.getNombre() + " : " + personaje.getPuntosDeVida());
         System.out.println("Oprima Enter para continuar");
@@ -51,11 +51,11 @@ public class Evento {
         do {
             calcularAtaque(oponente, personaje);
             estadoBatalla = calcularEstadoBatalla();
-            estadoBatalla();
+            mostrarEstadoBatalla();
             anyButton.nextLine();
             if (!estadoBatalla) break;
             calcularAtaque(personaje, oponente);
-            estadoBatalla();
+            mostrarEstadoBatalla();
             anyButton.nextLine();
             estadoBatalla = calcularEstadoBatalla();
 
