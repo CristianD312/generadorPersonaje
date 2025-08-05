@@ -3,9 +3,11 @@ public class Artesano extends Personaje {
     private Espada espada;
     private Pocion pocion;
 
-    public Artesano(String nombre, int nivel, int puntosDeVida, String especialidad) {
-        super(nombre, nivel, puntosDeVida);
+    public Artesano(String nombre, int puntosDeVida, int puntosExperiencia, int puntosDeAtaque, String especialidad, Espada espada, Pocion pocion) {
+        super(nombre, puntosDeVida, puntosExperiencia, puntosDeAtaque);
         this.especialidad = especialidad;
+        this.espada = espada;
+        this.pocion = pocion;
     }
 
     @Override

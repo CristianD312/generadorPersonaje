@@ -1,8 +1,8 @@
 public class Mago extends Personaje implements Entrenable {
     private String elementoMagico;
 
-    public Mago(String nombre, int nivel, int puntosDeVida, String elementoMagico) {
-        super(nombre, nivel, puntosDeVida);
+    public Mago(String nombre, int puntosDeVida, int puntosExperiencia, int puntosDeAtaque, String elementoMagico) {
+        super(nombre, puntosDeVida, puntosExperiencia, puntosDeAtaque);
         this.elementoMagico = elementoMagico;
     }
 

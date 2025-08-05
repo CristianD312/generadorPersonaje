@@ -1,8 +1,8 @@
 public class Guerrero extends Personaje implements Entrenable {
     private String arma;
 
-    public Guerrero(String nombre, int nivel, int puntosDeVida, String arma) {
-        super(nombre, nivel, puntosDeVida);
+    public Guerrero(String nombre, int puntosDeVida, int puntosExperiencia, int puntosDeAtaque, String arma) {
+        super(nombre, puntosDeVida, puntosExperiencia, puntosDeAtaque);
         this.arma = arma;
     }
 

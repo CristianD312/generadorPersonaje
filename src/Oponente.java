@@ -1,10 +1,8 @@
 public class Oponente extends Personaje{
-    private int puntosAtaque;
 
 
-    public Oponente(String nombre, int nivel, int puntosDeVida, int puntosExperiencia, int puntosAtaque) {
-        super(nombre, nivel, puntosDeVida, puntosExperiencia);
-        this.puntosAtaque = puntosAtaque;
+    public Oponente(String nombre, int puntosDeVida, int puntosExperiencia, int puntosDeAtaque) {
+        super(nombre, puntosDeVida, puntosExperiencia, puntosDeAtaque);
     }
 
     public int getPuntosAtaque() {
